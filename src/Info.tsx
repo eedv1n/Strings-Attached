@@ -3,7 +3,7 @@ import './Info.css';
 
 function Info() {
 	return (
-		<Elements.animMain>
+		<Elements.AnimMain>
 			<h1 className="title">Info</h1>
 			<p>
 				Vi är 4 vänner som träffades genom Norrlands Nations salongsorkester i
@@ -19,7 +19,7 @@ function Info() {
 				Isabella Marin - Violin 1 | Catherine Duarte Martins - Violin 2 | Åsa
 				Neuman - Viola | Erik Salmonsson - Cello
 			</p>
-		</Elements.animMain>
+		</Elements.AnimMain>
 	);
 }
 
