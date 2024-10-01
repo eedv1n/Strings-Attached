@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+	margin: 0px;
+}
+:root {
+	background-color: black;
+	font-family: inter;
+	color: white;
+	overflow: hidden;
+}
+main {
+	display: flex;
+	font-family: inter;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	background-image: url('background.min.svg');
+	background-size: 4000px;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: inset 0px 0px 100px 50px black;
+	padding: 0 25px;
+	overflow: hidden scroll;
+}
+.title {
+	background: rgb(136, 110, 57);
+	background: linear-gradient(
+		90deg,
+		rgba(136, 110, 57, 1) 0%,
+		rgba(193, 161, 86, 1) 50%,
+		rgba(167, 138, 56, 1) 100%
+	);
+	background-clip: text;
+	color: transparent;
+	margin: 0px;
+	margin-bottom: 20px;
+	text-shadow: 0px 0px 4px rgb(160, 140, 99);
+	transition: all 0.2s ease-in-out;
+	font-weight: 200;
+	font-size: 50px;
+	user-select: none;
+}
+@media (pointer: fine) {
+	.title:hover {
+		transform: scale(1.01);
+	}
+}
+@media only screen and (max-width: 700px) {
+	.title {
+		font-size: 40px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.title {
+		font-size: 30px;
+		text-shadow: 0px 0px 4px rgb(197, 181, 147);
+	}
+}
+h3 {
+	background: rgb(136, 110, 57);
+	background: linear-gradient(
+		90deg,
+		rgb(194, 166, 110) 0%,
+		rgb(196, 172, 119) 50%,
+		rgb(219, 194, 124) 100%
+	);
+	background-clip: text;
+	color: transparent;
+	margin: 10px 0;
+	transition: all 0.2s ease-in-out;
+	font-weight: 300;
+	font-size: 24px;
+	user-select: none;
+	text-shadow: 0px 0px 3px rgb(160, 140, 99);
+}
+@media only screen and (max-width: 500px) {
+	h3 {
+		font-size: 20px;
+	}
+}
+@media (pointer: fine) {
+	h3:hover {
+		transform: scale(1.01);
+	}
+}
+p {
+	background: rgb(136, 110, 57);
+	background: linear-gradient(
+		90deg,
+		rgb(194, 166, 110) 0%,
+		rgb(196, 172, 119) 50%,
+		rgb(219, 194, 124) 100%
+	);
+	background-clip: text;
+	color: transparent;
+	text-align: center;
+	text-wrap: wrap;
+	text-shadow: 0px 0px 3px rgb(160, 140, 99);
+	user-select: none;
+	font-size: 15px;
+}
+@media only screen and (max-width: 450px) {
+	p {
+		font-size: 12px;
+	}
+}
+.divider {
+	display: flex;
+	background-color: #4e4a3d;
+	color: #4e4a3d;
+	width: 100vw;
+	height: 1px;
+	text-align: center;
+	font-size: 24px;
+	align-items: end;
+	user-select: none;
+}
+footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	height: 100px;
+	background-color: black;
+	bottom: 0;
+}
+::-webkit-scrollbar {
+	width: 20px;
+}
+::-webkit-scrollbar:horizontal {
+	height: 20px;
+}
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(
+		0deg,
+		rgb(129, 109, 69, 0.75) 0%,
+		rgb(153, 135, 94, 0.75) 50%,
+		rgb(184, 160, 94, 0.75) 100%
+	);
+	border-radius: 10px;
+	border: 8px solid transparent;
+	background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(
+		0deg,
+		rgb(129, 109, 69) 0%,
+		rgb(153, 135, 94) 50%,
+		rgb(184, 160, 94) 100%
+	);
+	border-radius: 10px;
+	border: 8px solid transparent;
+	background-clip: padding-box;
+}
+.nav-icon {
+	cursor: pointer;
+	filter: drop-shadow(0px 0px 3px rgba(192, 173, 132, 0.75));
+	transition: all 0.1s ease-in-out;
+	display: flex;
+	fill: #9d8759;
+	user-select: none;
+	margin: 0 20px;
+}
+@media only screen and (max-width: 500px) {
+	.nav-icon {
+		margin: 0 7.5px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.nav-icon {
+		margin: 0 3px;
+	}
+}
+#cursor-glow {
+	display: none;
+}
+@media (pointer: fine) {
+	.nav-icon:hover {
+		transform: scale(1.05);
+	}
+	#cursor-glow {
+		display: block;
+		position: absolute;
+		width: 75px;
+		height: 75px;
+		background-color: rgba(255, 255, 255, 0.5);
+		z-index: 10;
+		filter: blur(100px);
+		border-radius: 10px;
+		pointer-events: none;
+	}
+}
+#footer-refferals {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+a {
+	color: white;
+	display: flex;
+	text-decoration: underline #9d8759 1px;
+	transition: all 0.2s ease-in-out;
+	background: rgb(136, 110, 57);
+	background: linear-gradient(
+		90deg,
+		rgb(194, 166, 110) 0%,
+		rgb(196, 172, 119) 50%,
+		rgb(219, 194, 124) 100%
+	);
+	background-clip: text;
+	color: transparent;
+	text-align: center;
+	text-wrap: wrap;
+	text-shadow: 0px 0px 3px rgb(160, 140, 99);
+	user-select: none;
+	margin: 0px 10px;
+}
+@media (pointer: fine) {
+	a:hover {
+		transform: scale(1.03);
+	}
+}
+.picture {
+	border: 2px solid #8d7d5c;
+	transition: all 0.2s ease-in-out;
+	min-height: 0;
+	min-width: 0;
+	display: flex;
+	user-select: none;
+	filter: drop-shadow(0px 0px 5px #8d7d5c);
+	margin: 0 25px;
+}
+@media (pointer: fine) {
+	.picture:hover {
+		transform: scale(1.01);
+	}
+}
+.pictures {
+	display: flex;
+	align-items: center;
+	height: 45%;
+	overflow: scroll hidden;
+	width: 100vw;
+	margin-top: 50px;
+}
+#footer-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+#nav-content {
+	z-index: 50;
+	position: fixed;
+	height: 47.5px;
+	align-items: center;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	padding: 0 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	background-color: rgba(44, 44, 44, 0.1);
+	backdrop-filter: blur(5px);
+	border: 1px solid #635b4c;
+	border-radius: 100px;
+	top: 20px;
+	filter: drop-shadow(0px 0px 5px rgba(65, 62, 52));
+}
+.audio-player {
+	display: flex;
+	width: 200px;
+	height: 50px;
+	border-radius: 15px;
+	background-color: black;
+	border: #635b4c solid 1px;
+	align-items: center;
+	justify-content: center;
+}
+input[type='range'] {
+	appearance: none;
+	background-color: transparent;
+	color: white;
+	outline: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+	appearance: none;
+	background-color: rgb(20, 20, 20);
+	border-radius: 20px;
+	height: 10px;
+	display: flex;
+}
+input[type='range']::-webkit-slider-thumb {
+	appearance: none;
+	background-color: rgb(165, 144, 101);
+	height: 10px;
+	width: 20px;
+	border-radius: 100px;
+	transition: background-color 0.2s ease-in-out;
+}
+input[type='range']::-webkit-slider-thumb:hover {
+	background-color: rgb(102, 88, 59);
+}
