@@ -2,7 +2,7 @@ import * as Elements from './Elements';
 
 function Home() {
 	return (
-		<Elements.animMain>
+		<Elements.AnimMain>
 			<h1 className="title">Strings Attached</h1>
 
 			<h3 style={{ marginBottom: '20px' }}> - en Uppsalakvartett</h3>
@@ -15,7 +15,7 @@ function Home() {
 				Med en bred repertoar höjer vi stämningen på bröllop, fester & andra
 				event.
 			</p>
-		</Elements.animMain>
+		</Elements.AnimMain>
 	);
 }
 

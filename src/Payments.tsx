@@ -2,7 +2,7 @@ import * as Elements from './Elements';
 
 function Payments() {
 	return (
-		<Elements.animMain>
+		<Elements.AnimMain>
 			<h1 className="title">Prislista</h1>
 			<div id="vigsel">
 				<h3>Spela under vigsel/in-/utgång</h3>
@@ -29,7 +29,7 @@ function Payments() {
 				<h3>Reseersättning</h3>
 				<p>500 SEK per person</p>
 			</div>
-		</Elements.animMain>
+		</Elements.AnimMain>
 	);
 }
 
