@@ -5,5 +5,5 @@
 			"dest": "/"
 		}
 	],
-	"headers": ["cache-control: public, max-age=60"]
+	"headers": { "cache-control": "public, max-age=60" }
 }
