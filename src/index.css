@@ -7,6 +7,7 @@ body {
 	background-color: black;
 	font-family: inter;
 	color: white;
+	overflow: hidden;
 }
 main {
 	display: flex;
@@ -21,7 +22,6 @@ main {
 	background-position: center;
 	box-shadow: inset 0px 0px 100px 50px black;
 	padding: 0 25px;
-	overflow: hidden scroll;
 }
 .title {
 	background: rgb(136, 110, 57);
