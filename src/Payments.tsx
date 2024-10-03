@@ -1,4 +1,5 @@
 import * as Elements from './Elements';
+import './Payments.css';
 
 function Payments() {
 	return (
