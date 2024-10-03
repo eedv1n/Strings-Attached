@@ -15,13 +15,14 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 90vh;
+	height: calc(100vh - 100px);
 	background-image: url('/background.min.svg');
 	background-size: 4000px;
 	background-repeat: no-repeat;
 	background-position: center;
 	box-shadow: inset 0px 0px 100px 50px black;
-	padding: 0 25px;
+	padding: 25px;
+	padding-top: 67.5px;
 }
 .title {
 	background: rgb(136, 110, 57);
@@ -250,7 +251,7 @@ a {
 	align-items: center;
 	height: 100%;
 }
-#nav-content {
+nav {
 	z-index: 50;
 	position: fixed;
 	height: 47.5px;
