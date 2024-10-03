@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
-export const NavBar = () => (
-	<nav>
-		<div id="nav-content">
+export const NavBar = () => {
+	return (
+		<nav>
 			<a href="/" className="nav-icon">
 				<img src="/home-icon.svg" height={40} />
 			</a>
@@ -19,9 +19,9 @@ export const NavBar = () => (
 			<a href="/info" className="nav-icon">
 				<img src="/info-icon.svg" height={38} />
 			</a>
-		</div>
-	</nav>
-);
+		</nav>
+	);
+};
 
 export const AnimMain = ({ children }: { children?: React.ReactNode }) => (
 	<motion.main
