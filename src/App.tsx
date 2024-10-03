@@ -24,10 +24,16 @@ function App() {
 						Strings Attached - en Uppsalakvartett
 					</p>
 					<div id="footer-refferals">
-						<a href="https://www.facebook.com/p/Strings-attached-en-Uppsalakvartett-100035516457059/?paipv=0&eav=AfYLfP_NTVfy2kkaQFu0d7jmtlzKlYpCdySnfVdpeLecFDEkr_j3AwFmcFehftz0DvQ&_rdr">
+						<a
+							href="https://www.facebook.com/p/Strings-attached-en-Uppsalakvartett-100035516457059/?paipv=0&eav=AfYLfP_NTVfy2kkaQFu0d7jmtlzKlYpCdySnfVdpeLecFDEkr_j3AwFmcFehftz0DvQ&_rdr"
+							target="_blank"
+						>
 							Facebook
 						</a>
-						<a href="https://www.instagram.com/strings_attached_strakkvartett/?locale=en-SG">
+						<a
+							href="https://www.instagram.com/strings_attached_strakkvartett/?locale=en-SG"
+							target="_blank"
+						>
 							Instagram
 						</a>
 					</div>
