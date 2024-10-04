@@ -23,6 +23,8 @@ main {
 	box-shadow: inset 0px 0px 100px 50px black;
 	padding: 25px;
 	padding-top: 67.5px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .title {
 	background: rgb(136, 110, 57);
