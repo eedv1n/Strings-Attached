@@ -1,5 +1,4 @@
 import * as Elements from './Elements';
-import './Home.css';
 
 function Home() {
 	return (
