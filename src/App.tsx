@@ -1,20 +1,31 @@
 import { BrowserRouter } from 'react-router-dom';
 import AnimatedRoutes from './AnimatedRoutes';
 import * as Elements from './Elements';
+import { useEffect, useRef } from 'react';
 
 function App() {
-	document.addEventListener('mousemove', (e) => {
-		const cursorGlow = document.getElementById('cursor-glow');
+	const cursorGlow = useRef<HTMLDivElement>(null);
 
-		if (cursorGlow) {
-			cursorGlow.style.left = e.clientX - cursorGlow.offsetWidth / 2 + 'px';
-			cursorGlow.style.top = e.clientY - cursorGlow.offsetHeight / 2 + 'px';
+	const handleMouseMovement = (e: MouseEvent) => {
+		if (cursorGlow.current) {
+			cursorGlow.current.style.left =
+				e.clientX - cursorGlow.current.offsetWidth / 2 + 'px';
+			cursorGlow.current.style.top =
+				e.clientY - cursorGlow.current.offsetHeight / 2 + 'px';
 		}
-	});
+	};
+
+	useEffect(() => {
+		window.addEventListener('mousemove', handleMouseMovement);
+
+		return () => {
+			window.removeEventListener('mousemove', handleMouseMovement);
+		};
+	}, []);
 
 	return (
 		<BrowserRouter key={location.pathname}>
-			<div id="cursor-glow" />
+			<div id="cursor-glow" ref={cursorGlow} />
 			<Elements.NavBar />
 			<AnimatedRoutes />
 			<Elements.AnimFooter>
