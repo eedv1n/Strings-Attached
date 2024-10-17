@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import * as Elements from './Elements';
-import './Pictures.css';
 
 function Pictures() {
 	const pictureTrack = useRef<HTMLDivElement>(null);
