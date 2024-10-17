@@ -1,4 +1,5 @@
 import * as Elements from './Elements';
+import './Home.css';
 
 function Home() {
 	return (
@@ -10,7 +11,10 @@ function Home() {
 				className="divider"
 				style={{ marginBottom: '20px', width: '50px' }}
 			/>
-			<img src="pic1.jpg" className="picture" height={'30%'} />
+
+			<div style={{ height: '30vh', display: 'flex', alignItems: 'center' }}>
+				<img src="pic1.jpg" className="picture" />
+			</div>
 			<p>
 				Med en bred repertoar höjer vi stämningen på bröllop, fester & andra
 				event.
