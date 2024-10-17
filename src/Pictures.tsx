@@ -1,26 +1,29 @@
 import { useEffect, useRef } from 'react';
 import * as Elements from './Elements';
+import './Pictures.css';
 
 function Pictures() {
-	const pictures = useRef<HTMLDivElement>(null);
+	const pictureTrack = useRef<HTMLDivElement>(null);
 
 	let animationId: number;
 
+	useEffect(() => {});
+
 	useEffect(() => {
-		const checkOverflow = () => {
-			if (pictures.current) {
-				if (pictures.current.scrollWidth <= pictures.current.offsetWidth) {
-					pictures.current.style.justifyContent = 'center';
-					console.log('Not overflowing');
+		const stylePictureTrack = () => {
+			if (pictureTrack.current) {
+				if (
+					pictureTrack.current.scrollWidth <= pictureTrack.current.offsetWidth
+				) {
+					pictureTrack.current.style.justifyContent = 'center';
 				} else {
-					pictures.current.style.justifyContent = 'start';
-					console.log('Overflowing');
+					pictureTrack.current.style.justifyContent = 'start';
 				}
 			}
 		};
 
 		const animate = () => {
-			checkOverflow();
+			stylePictureTrack();
 			// eslint-disable-next-line react-hooks/exhaustive-deps
 			animationId = requestAnimationFrame(animate);
 		};
@@ -35,7 +38,7 @@ function Pictures() {
 	return (
 		<Elements.AnimMain>
 			<h1 className="title">Bilder</h1>
-			<div className="pictures" ref={pictures}>
+			<div className="picture-track" ref={pictureTrack}>
 				<img src="pic2.jpg" className="picture" height={'90%'} />
 				<img src="pic5.jpg" className="picture" height={'90%'} />
 				<img src="pic3.jpeg" className="picture" height={'90%'} />
