@@ -7,11 +7,19 @@ function App() {
 	const cursorGlow = useRef<HTMLDivElement>(null);
 
 	const handleMouseMovement = (e: MouseEvent) => {
-		if (cursorGlow.current) {
+		const main: HTMLElement = document.getElementsByTagName('main')[0];
+
+		if (cursorGlow.current && !window.matchMedia('(pointer: coarse)').matches) {
 			cursorGlow.current.style.left =
 				e.clientX - cursorGlow.current.offsetWidth / 2 + 'px';
 			cursorGlow.current.style.top =
 				e.clientY - cursorGlow.current.offsetHeight / 2 + 'px';
+
+			main.style.transform = `translateX(${
+				((e.clientX - main.offsetWidth / 2) / 50).toString() + 'px'
+			}) translateY(${
+				((e.clientY - main.offsetHeight / 2) / 50).toString() + 'px'
+			})`;
 		}
 	};
 
@@ -21,7 +29,7 @@ function App() {
 		return () => {
 			window.removeEventListener('mousemove', handleMouseMovement);
 		};
-	}, []);
+	});
 
 	return (
 		<BrowserRouter key={location.pathname}>

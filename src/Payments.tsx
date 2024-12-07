@@ -5,7 +5,7 @@ function Payments() {
 		<Elements.AnimMain>
 			<h1 className="title">Prislista</h1>
 			<div id="vigsel">
-				<h3>Spela under vigsel/in-/utgång</h3>
+				<h3>Spela under vigsel/in/utgång</h3>
 				<p>7000 SEK</p>
 			</div>
 			<p className="divider" style={{ width: 'fit-content', color: '#96835b' }}>

@@ -75,12 +75,29 @@ export const AudioPlayer = ({ src }: { src: string }) => {
 		}
 	};
 
-	const changePlayerIcon = () => {
+	const fade = [{ opacity: 1 }, { opacity: 0 }, { opacity: 1 }];
+
+	const fadeTiming = {
+		duration: 200,
+		iterations: 1,
+	};
+
+	const changePlayerIcon = async () => {
 		if (!audioPlayer?.current?.paused && playerIcon.current) {
-			playerIcon.current.src = 'pause-icon.svg';
+			playerIcon.current.animate(fade, fadeTiming);
+			setTimeout(() => {
+				if (playerIcon.current) {
+					playerIcon.current.src = 'pause-icon.svg';
+				}
+			}, 100);
 		}
 		if (audioPlayer?.current?.paused && playerIcon.current) {
-			playerIcon.current.src = 'play-icon.svg';
+			playerIcon.current.animate(fade, fadeTiming);
+			setTimeout(() => {
+				if (playerIcon.current) {
+					playerIcon.current.src = 'play-icon.svg';
+				}
+			}, 100);
 		}
 	};
 
