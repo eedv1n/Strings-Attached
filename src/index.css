@@ -352,3 +352,18 @@ input[type='range']::-moz-range-thumb:hover {
 	min-width: none;
 	background-color: rgb(7, 7, 7);
 }
+ul {
+	background: rgb(136, 110, 57);
+	background: linear-gradient(
+		90deg,
+		rgb(194, 166, 110) 0%,
+		rgb(196, 172, 119) 50%,
+		rgb(219, 194, 124) 100%
+	);
+	background-clip: text;
+	color: transparent;
+	text-shadow: 0px 0px 3px rgb(160, 140, 99);
+	user-select: none;
+	font-size: 15px;
+	list-style: none;
+}

@@ -16,10 +16,12 @@ function Info() {
 					popmusik. Vi jobbar allihop med annat än musik till vardags och spelar
 					ihop för att det är roligt!
 				</p>
-				<p>
-					Isabella Marin - Violin 1 | Catherine Duarte Martins - Violin 2 | Åsa
-					Neuman - Viola | Erik Salmonsson - Cello
-				</p>
+				<ul>
+					<li>Isabella Marin - Violin 1</li>
+					<li>Catherine Duarte Martins - Violin 2</li>
+					<li>Åsa Neuman - Viola</li>
+					<li>Erik Salmonsson - Cello</li>
+				</ul>
 			</div>
 		</Components.AnimMain>
 	);
