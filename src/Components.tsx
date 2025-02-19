@@ -108,7 +108,6 @@ export const AudioPlayer = ({ src }: { src: string }) => {
 					audioPlayer.current
 						.duration) as unknown as number)) as unknown as string;
 		}
-		console.log(playerIcon.current?.height);
 	}, 1000);
 
 	return (
@@ -127,7 +126,7 @@ export const AudioPlayer = ({ src }: { src: string }) => {
 				onClick={playAudio}
 				ref={playerIcon}
 			/>
-			<input type="range" ref={slider} onInput={goToTime} />
+			<input type="range" ref={slider} onInput={goToTime} defaultValue={0} />
 		</div>
 	);
 };

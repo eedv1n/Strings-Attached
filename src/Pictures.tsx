@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import * as Elements from './Elements';
+import * as Components from './Components';
 
 function Pictures() {
 	const pictureTrack = useRef<HTMLDivElement>(null);
@@ -35,7 +35,7 @@ function Pictures() {
 	});
 
 	return (
-		<Elements.AnimMain>
+		<Components.AnimMain>
 			<h1 className="title">Bilder</h1>
 			<div className="picture-track" ref={pictureTrack}>
 				<img src="pic2.jpg" className="picture" height={'90%'} />
@@ -43,7 +43,7 @@ function Pictures() {
 				<img src="pic3.jpeg" className="picture" height={'90%'} />
 				<img src="pic4.jpg" className="picture" height={'90%'} />
 			</div>
-		</Elements.AnimMain>
+		</Components.AnimMain>
 	);
 }
 

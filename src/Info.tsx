@@ -1,9 +1,9 @@
-import * as Elements from './Elements';
+import * as Components from './Components';
 import './Info.css';
 
 function Info() {
 	return (
-		<Elements.AnimMain>
+		<Components.AnimMain>
 			<h1 className="title">Info</h1>
 			<div className="text-box">
 				<p>
@@ -21,7 +21,7 @@ function Info() {
 					Neuman - Viola | Erik Salmonsson - Cello
 				</p>
 			</div>
-		</Elements.AnimMain>
+		</Components.AnimMain>
 	);
 }
 

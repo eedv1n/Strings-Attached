@@ -1,8 +1,8 @@
-import * as Elements from './Elements';
+import * as Components from './Components';
 
 function Home() {
 	return (
-		<Elements.AnimMain>
+		<Components.AnimMain>
 			<h1 className="title">Strings Attached</h1>
 
 			<h3 style={{ marginBottom: '20px' }}> - en Uppsalakvartett</h3>
@@ -18,7 +18,7 @@ function Home() {
 				Med en bred repertoar höjer vi stämningen på bröllop, fester & andra
 				event.
 			</p>
-		</Elements.AnimMain>
+		</Components.AnimMain>
 	);
 }
 

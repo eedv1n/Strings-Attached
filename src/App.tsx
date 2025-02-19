@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import AnimatedRoutes from './AnimatedRoutes';
-import * as Elements from './Elements';
+import * as Components from './Components';
 import { useEffect, useRef } from 'react';
 
 function App() {
@@ -34,9 +34,9 @@ function App() {
 	return (
 		<BrowserRouter key={location.pathname}>
 			<div id="cursor-glow" ref={cursorGlow} />
-			<Elements.NavBar />
+			<Components.NavBar />
 			<AnimatedRoutes />
-			<Elements.AnimFooter>
+			<Components.AnimFooter>
 				<div className="divider" />
 				<div id="footer-content">
 					<p style={{ margin: 0, marginBottom: '10px' }}>
@@ -50,14 +50,14 @@ function App() {
 							Facebook
 						</a>
 						<a
-							href="https://www.instagram.com/strings_attached_strakkvartett/?locale=en-SG"
+							href="https://www.instagram.com/strings_attached_strakkvartett/"
 							target="_blank"
 						>
 							Instagram
 						</a>
 					</div>
 				</div>
-			</Elements.AnimFooter>
+			</Components.AnimFooter>
 		</BrowserRouter>
 	);
 }
